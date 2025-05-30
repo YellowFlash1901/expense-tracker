@@ -20,29 +20,27 @@ public class ExpenseModel {
     //expense id
     private Integer id;
 
-    @ManyToOne
-    @JoinColumn(name = "user_id", nullable = false)
-    private UserModel user;
+
 
     @NotNull
     @Positive
     private BigDecimal amount;
 
     @Nullable
-    private StringBuilder description;
+    private String description;
 
-    @NotNull
-    private Date date;
-
-//    @Nullable
-//    @ManyToMany
-//    private Integer category_id;
-
-    @CreatedDate
-    @NotNull
-    private LocalDateTime created_at;
-
-    @LastModifiedDate
-    @NotNull
-    private LocalDateTime  updated_at;
+//    @NotNull
+//    private Date date;
+//
+////    @Nullable
+////    @ManyToMany
+////    private Integer category_id;
+//
+//    @CreatedDate
+//    @NotNull
+//    private LocalDateTime created_at;
+//
+//    @LastModifiedDate
+//    @NotNull
+//    private LocalDateTime  updated_at;
 }
