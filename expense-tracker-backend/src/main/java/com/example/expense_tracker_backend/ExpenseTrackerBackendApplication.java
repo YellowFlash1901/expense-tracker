@@ -7,8 +7,8 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication(scanBasePackages = "com.example.expense_tracker_backend")
-@EnableJpaRepositories("com.example.expense_tracker_backend.repositories")
-@EntityScan("com.example.expense_tracker_backend.models")
+@EnableJpaRepositories("com.example.expense_tracker_backend.repository")
+@EntityScan("com.example.expense_tracker_backend.entity")
 public class ExpenseTrackerBackendApplication {
 
 	public static void main(String[] args) {

@@ -11,7 +11,7 @@ import java.time.LocalDate;
 
 @Entity
 @Data
-public class ExpenseEntity {
+public class Expense {
 
 
     @Id
